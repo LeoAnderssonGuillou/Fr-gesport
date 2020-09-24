@@ -11,7 +11,8 @@ namespace Frågesport_project
             Console.WriteLine("Vad är 9 + 10?");
             Console.WriteLine("a)21  b)19  c)90");
             string svar1;
-            svar1 = Console.ReadLine();
+            svar1 = "";
+            LimitInput(svar1);
             if (svar1 == "b" || svar1 == "19")
             {
                 Console.WriteLine("Rätt!");
@@ -28,7 +29,15 @@ namespace Frågesport_project
             Console.WriteLine("Vad heter den gudalika hunden som Leo alltid använder som placeholder?");
             Console.WriteLine("a)Walter  b)Eggdog  c)Bubba");
             string svar2;
-            svar2 = Console.ReadLine();
+            svar2 = "";
+            while (svar2 != "a" && svar2 != "b" && svar2 != "c")
+            {
+                svar2 = Console.ReadLine();
+                if (svar2 != "a" && svar2 != "b" && svar2 != "c")
+                {
+                    Console.WriteLine("Skriv a, b eller c.");
+                }
+            }
             if (svar2 == "a" || svar2 == "Walter")
             {
                 Console.WriteLine("Korrekt. Walter är vår enda gud.");
@@ -45,7 +54,15 @@ namespace Frågesport_project
             Console.WriteLine("När kommer man undan matten?");
             Console.WriteLine("a)I trean  b)Efter högskolan  c)Aldrig");
             string svar3;
-            svar3 = Console.ReadLine();
+            svar3 = "";
+            while (svar3 != "a" && svar3 != "b" && svar3 != "c")
+            {
+                svar3 = Console.ReadLine();
+                if (svar3 != "a" && svar3 != "b" && svar3 != "c")
+                {
+                    Console.WriteLine("Skriv a, b eller c.");
+                }
+            }
             if (svar3 == "c" || svar3 == "Aldrig")
             {
                 Console.WriteLine("Stämmer. Dread it, run from it, math arrives all the same.");
@@ -80,6 +97,17 @@ namespace Frågesport_project
             {
                 Console.WriteLine("Bro. You just posted cringe. SMALL BRAIN!");
                 Console.ReadLine();
+            }
+        }
+        static void LimitInput(string svarx)
+        {
+            while (svarx != "a" && svarx != "b" && svarx != "c")
+            {
+                svarx = Console.ReadLine();
+                if (svarx != "a" && svarx != "b" && svarx != "c")
+                {
+                    Console.WriteLine("Skriv a, b eller c.");
+                }
             }
         }
     }
