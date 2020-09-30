@@ -8,12 +8,13 @@ namespace Frågesport_project
         {
             int score;
             score = 0;
+            string svar;
+            svar = "";
+
             Console.WriteLine("Vad är 9 + 10?");
             Console.WriteLine("a)21  b)19  c)90");
-            string svar1;
-            svar1 = "";
-            LimitInput(svar1);
-            if (svar1 == "b" || svar1 == "19")
+            svar = LimitInput("21", "19", "90");
+            if (svar == "b" || svar == "19")
             {
                 Console.WriteLine("Rätt!");
                 Console.WriteLine("+100 poäng");
@@ -28,17 +29,8 @@ namespace Frågesport_project
 
             Console.WriteLine("Vad heter den gudalika hunden som Leo alltid använder som placeholder?");
             Console.WriteLine("a)Walter  b)Eggdog  c)Bubba");
-            string svar2;
-            svar2 = "";
-            while (svar2 != "a" && svar2 != "b" && svar2 != "c")
-            {
-                svar2 = Console.ReadLine();
-                if (svar2 != "a" && svar2 != "b" && svar2 != "c")
-                {
-                    Console.WriteLine("Skriv a, b eller c.");
-                }
-            }
-            if (svar2 == "a" || svar2 == "Walter")
+            svar = LimitInput("Walter", "Eggdog", "Bubba");
+            if (svar == "a" || svar == "Walter")
             {
                 Console.WriteLine("Korrekt. Walter är vår enda gud.");
                 Console.WriteLine("+100 poäng");
@@ -53,17 +45,8 @@ namespace Frågesport_project
 
             Console.WriteLine("När kommer man undan matten?");
             Console.WriteLine("a)I trean  b)Efter högskolan  c)Aldrig");
-            string svar3;
-            svar3 = "";
-            while (svar3 != "a" && svar3 != "b" && svar3 != "c")
-            {
-                svar3 = Console.ReadLine();
-                if (svar3 != "a" && svar3 != "b" && svar3 != "c")
-                {
-                    Console.WriteLine("Skriv a, b eller c.");
-                }
-            }
-            if (svar3 == "c" || svar3 == "Aldrig")
+            svar = LimitInput("I trean", "Efter högskolan", "Aldrig");
+            if (svar == "c" || svar == "Aldrig")
             {
                 Console.WriteLine("Stämmer. Dread it, run from it, math arrives all the same.");
                 Console.WriteLine("+100 poäng");
@@ -99,16 +82,19 @@ namespace Frågesport_project
                 Console.ReadLine();
             }
         }
-        static void LimitInput(string svarx)
+        static string LimitInput(string alt1, string alt2, string alt3)
         {
-            while (svarx != "a" && svarx != "b" && svarx != "c")
+            string svarX;
+            svarX = "";
+            while (svarX != "a" && svarX != "b" && svarX != "c" && svarX != alt1 && svarX != alt2 && svarX != alt3)
             {
-                svarx = Console.ReadLine();
-                if (svarx != "a" && svarx != "b" && svarx != "c")
+                svarX = Console.ReadLine();
+                if (svarX != "a" && svarX != "b" && svarX != "c" && svarX != alt1 && svarX != alt2 && svarX != alt3)
                 {
-                    Console.WriteLine("Skriv a, b eller c.");
+                    Console.WriteLine("Skriv något av alternativen.");
                 }
             }
+            return svarX;
         }
     }
 }

@@ -8,11 +8,11 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
+		Debug|svar64 = Debug|svar64
+		Debug|svar86 = Debug|svar86
 		Release|Any CPU = Release|Any CPU
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
+		Release|svar64 = Release|svar64
+		Release|svar86 = Release|svar86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -20,15 +20,15 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Debug|x64.Build.0 = Debug|Any CPU
-		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Debug|x86.Build.0 = Debug|Any CPU
+		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Debug|svar64.ActiveCfg = Debug|Any CPU
+		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Debug|svar64.Build.0 = Debug|Any CPU
+		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Debug|svar86.ActiveCfg = Debug|Any CPU
+		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Debug|svar86.Build.0 = Debug|Any CPU
 		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Release|x64.ActiveCfg = Release|Any CPU
-		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Release|x64.Build.0 = Release|Any CPU
-		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Release|x86.ActiveCfg = Release|Any CPU
-		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Release|x86.Build.0 = Release|Any CPU
+		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Release|svar64.ActiveCfg = Release|Any CPU
+		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Release|svar64.Build.0 = Release|Any CPU
+		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Release|svar86.ActiveCfg = Release|Any CPU
+		{EF428244-6A4E-4152-BDF4-D0A82EC9C9EF}.Release|svar86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
